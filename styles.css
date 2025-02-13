@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Alternate Background Colors for Sections */
+/* Background Color Variations */
 .white-bg {
     background-color: #ffffff;
 }
@@ -23,24 +24,24 @@ body {
 /* Navigation Bar */
 header {
     position: fixed;
+    top: 0;
     width: 100%;
     padding-top: 20px;
     text-align: center;
     z-index: 1000;
-    top: 0;
 }
 
 .nav-container {
     background-color: #ccc;
     padding: 15px 30px;
-    border-radius: 50px;
     display: inline-block;
+    border-radius: 50px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .nav-menu {
-    list-style: none;
     display: flex;
+    list-style: none;
     justify-content: center;
     gap: 20px;
 }
@@ -51,18 +52,18 @@ header {
 
 .nav-menu a {
     color: #555;
-    text-decoration: none;
     font-size: 16px;
     padding: 8px 16px;
-    border-radius: 50px;
+    text-decoration: none;
     background-color: transparent;
+    border-radius: 50px;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-menu a:hover,
 .nav-menu a.active {
     background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 /* Home Section */
@@ -78,10 +79,10 @@ header {
 .home-image img {
     width: 250px;
     height: 250px;
-    border-radius: 50%;
-    border: 4px solid #333;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
+    border: 4px solid #333;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .home-content h1 {
@@ -99,24 +100,20 @@ header {
 
 .home-buttons {
     display: flex;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
 .button {
     padding: 10px 30px;
-    border-radius: 50px;
-    border: 2px solid #333;
-    text-decoration: none;
     font-size: 18px;
+    border: 2px solid #333;
+    border-radius: 50px;
+    text-decoration: none;
     transition: 0.3s;
 }
 
-.github-btn {
-    background-color: transparent;
-    color: #333;
-}
-
+.github-btn,
 .linkedin-btn {
     background-color: transparent;
     color: #333;
@@ -125,7 +122,7 @@ header {
 .github-btn:hover,
 .linkedin-btn:hover {
     background-color: #333;
-    color: white;
+    color: #fff;
 }
 
 /* About Section */
@@ -133,18 +130,17 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    padding: 60px 20px;
+    gap: 50px;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 50px;
+    padding: 60px 20px;
 }
 
 .about-image img {
     width: 400px;
-    height: auto;
     border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .about-content {
@@ -154,32 +150,31 @@ header {
 
 .about-content h2 {
     font-size: 36px;
-    margin-bottom: 10px;
     color: #333;
+    margin-bottom: 10px;
     border-bottom: 4px solid #00509E;
     display: inline-block;
 }
 
 .about-content h3 {
     font-size: 26px;
-    margin-top: 20px;
     color: #333;
+    margin-top: 20px;
 }
 
 .about-content p {
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 20px;
-    color: #555;
 }
 
 .about-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0; /* Adds space at the bottom */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
 }
 
 /* Skills Section */
@@ -192,8 +187,8 @@ header {
 .skills-container h2 {
     font-size: 36px;
     color: #333;
-    border-bottom: 4px solid #00509E;
     margin-bottom: 30px;
+    border-bottom: 4px solid #00509E;
     text-align: left;
 }
 
@@ -217,7 +212,7 @@ header {
     transform: scale(1.2);
 }
 
-/* Experience, and Education Section Styling */
+/* Experience and Education Sections */
 .section-container {
     max-width: 900px;
     margin: 0 auto;
@@ -226,34 +221,24 @@ header {
 
 .section-container h2 {
     font-size: 36px;
-    margin-bottom: 20px;
     color: #333;
+    margin-bottom: 20px;
     border-bottom: 4px solid #00509E;
 }
 
 .section-container ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
     margin: 20px 0;
 }
 
 .section-container ul li {
-    margin-bottom: 20px;
     font-size: 18px;
     color: #555;
+    margin-bottom: 20px;
 }
 
-/* Contact Section */
-#contact p a {
-    color: #00509E;
-    text-decoration: none;
-}
-
-#contact p a:hover {
-    text-decoration: underline;
-}
-
-/* Experience Section */
+/* Experience Section - Timeline */
 .experience-container {
     max-width: 900px;
     margin: 0 auto;
@@ -262,12 +247,11 @@ header {
 
 .experience-container h2 {
     font-size: 36px;
-    margin-bottom: 40px;
     color: #333;
+    margin-bottom: 40px;
     border-bottom: 4px solid #00509E;
 }
 
-/* Timeline */
 .timeline {
     position: relative;
     padding: 20px 0;
@@ -277,11 +261,11 @@ header {
 .timeline::before {
     content: '';
     position: absolute;
-    width: 4px;
-    background-color: #333;
     top: 0;
     bottom: 0;
     left: 50%;
+    width: 4px;
+    background-color: #333;
     margin-left: -2px;
 }
 
@@ -295,30 +279,29 @@ header {
 .timeline-item.left {
     left: 0;
     text-align: right;
-    padding-right: 20px; /* Reduce padding to bring closer to the center */
+    padding-right: 20px;
 }
 
 .timeline-item.right {
     left: 50%;
     text-align: left;
-    padding-left: 20px; /* Reduce padding for symmetry */
+    padding-left: 20px;
 }
 
-/* Timeline Content */
 .timeline-content {
-    background-color: #f2f2f2;
+    width: 100%;
     padding: 20px;
+    background-color: #f2f2f2;
     border-radius: 8px;
     position: relative;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    width: 100%; /* Ensure the content boxes are full width */
 }
 
 .timeline-content h3 {
     font-size: 24px;
-    margin-bottom: 10px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .timeline-content p {
@@ -326,44 +309,44 @@ header {
     color: #555;
 }
 
-/* Timeline Date */
-.timeline-date {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #00509E;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: bold;
-    z-index: 1;
-    white-space: nowrap;
-    width: 275px;
-    text-align: center;
-}
-
-.timeline-item.left .timeline-date {
-    left: calc(100% + 15px); /* Move closer to center */
-}
-
-.timeline-item.right .timeline-date {
-    right: calc(100% + 15px); /* Move closer to center */
-}
-
 .timeline-content:hover {
     transform: scale(1.05);
 }
 
-/* Connecting Circle */
+/* Timeline Date Labels */
+.timeline-date {
+    position: absolute;
+    top: 50%;
+    width: 275px;
+    padding: 10px 20px;
+    background-color: #00509E;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.timeline-item.left .timeline-date {
+    left: calc(100% + 15px);
+}
+
+.timeline-item.right .timeline-date {
+    right: calc(100% + 15px);
+}
+
+/* Timeline Connecting Circles */
 .timeline-item::after {
     content: '';
     position: absolute;
+    top: 50%;
     width: 15px;
     height: 15px;
     background-color: #00509E;
     border-radius: 50%;
-    top: 50%;
     transform: translateY(-50%);
     z-index: 2;
 }
@@ -385,25 +368,24 @@ header {
 
 .education-container h2 {
     font-size: 36px;
-    margin-bottom: 40px;
     color: #333;
+    margin-bottom: 40px;
     border-bottom: 4px solid #00509E;
 }
 
-/* Education Card */
+/* Education Cards */
 .education-card {
     display: flex;
     align-items: center;
     background-color: #f2f2f2;
     padding: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
 }
 
 .education-image img {
     width: 180px;
-    height: auto;
     margin-right: 20px;
     border-radius: 5px;
 }
@@ -414,8 +396,8 @@ header {
 
 .education-content h3 {
     font-size: 24px;
-    margin-bottom: 10px;
     color: #333;
+    margin-bottom: 10px;
 }
 
 .education-content p {
@@ -426,14 +408,14 @@ header {
 
 .education-content ul {
     margin-top: 10px;
-    list-style-type: disc;
     padding-left: 20px;
+    list-style: disc;
 }
 
 .education-content ul li {
-    margin-bottom: 5px;
     font-size: 16px;
     color: #555;
+    margin-bottom: 5px;
 }
 
 /* Contact Section */
@@ -445,8 +427,8 @@ header {
 
 .contact-container h2 {
     font-size: 36px;
-    margin-bottom: 40px;
     color: #333;
+    margin-bottom: 40px;
     border-bottom: 4px solid #00509E;
 }
 
@@ -457,34 +439,32 @@ header {
     gap: 30px;
 }
 
-/* Contact Item */
+/* Contact Items */
 .contact-item {
-    background-color: #ffffff;
+    display: block;
+    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
     text-decoration: none;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-item:hover {
     transform: scale(1.05);
 }
 
-/* Flex container for icon and text */
 .contact-details {
     display: flex;
     align-items: center;
 }
 
-/* Contact Icon using Font Awesome */
 .contact-details i {
     font-size: 36px;
-    color: #00509E; /* Icon color */
+    color: #00509E;
     margin-right: 15px;
 }
 
-/* Contact Text */
 .contact-details div {
     flex: 1;
 }
@@ -504,9 +484,33 @@ header {
     color: inherit;
 }
 
-/* Bottom of the page padding */
+/* Footer Padding */
 body::after {
     content: "";
     display: block;
     height: 150px; /* Adjust this value to change bottom height */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    /* About Section Responsive */
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    /* Navigation Menu Responsive */
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
 }
