@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Information -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    
+    <!-- CSS Stylesheets -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Navigation Bar -->
     <header>
         <div class="nav-container">
             <nav>
@@ -49,9 +55,10 @@
             </div>
             <div class="about-content">
                 <h2>About Me</h2>
-                <p>Hello, my name is Eli Waisbrod, and I'm from Vaughan, Ontario. I'm currently a Computer Science Student at Western University. I’m passionate about problem-solving, artificial intelligence, and solving real-world problems.</p>
-                <h3>Bachelor of Computer Science</h3>
-                <p>Aside from my professional life, here's a little more about me...</p>
+                <p>Hello, my name is Eli Waisbrod, and I'm from Vaughan, Ontario. I'm currently a Computer Science student at Western University. I’m passionate about problem-solving, artificial intelligence, and tackling real-world challenges.</p>
+                
+                <h3>More About Me</h3>
+                <p>Aside from my professional life, here's a little more about me:</p>
                 <ul class="about-list">
                     <li><strong>Favorite Food:</strong> Italian 🍕</li>
                     <li><strong>Favorite Sport:</strong> Swimming 🏊</li>
@@ -60,7 +67,7 @@
                     <li><strong>Favorite Activity:</strong> Travel 🌍</li>
                     <li><strong>Favorite Music Genre:</strong> Hip-Hop 🎶</li>
                 </ul>
-                <p>I was originally born in South Africa and moved to Canada when I was 5. I enjoy traveling, and anything that gets my adrenaline going including skydiving, scuba diving, and wakeboarding.</p>
+                <p>I was originally born in South Africa and moved to Canada when I was five. I enjoy traveling and anything that gets my adrenaline going, including skydiving, scuba diving, and wakeboarding.</p>
             </div>
         </div>
     </section>
@@ -70,18 +77,23 @@
         <div class="section-container">
             <h2>My Skills</h2>
             <div class="skills-list">
+                <!-- Python -->
                 <div class="skill-item">
                     <img src="images/python.webp" alt="Python Logo">
                 </div>
+                <!-- Java -->
                 <div class="skill-item">
                     <img src="images/java.webp" alt="Java Logo">
                 </div>
+                <!-- HTML -->
                 <div class="skill-item">
                     <img src="images/html.webp" alt="HTML Logo">
                 </div>
+                <!-- CSS -->
                 <div class="skill-item">
                     <img src="images/css.webp" alt="CSS Logo">
                 </div>
+                <!-- Linux -->
                 <div class="skill-item">
                     <img src="images/linux.webp" alt="Linux Logo">
                 </div>
@@ -94,26 +106,27 @@
         <div class="experience-container">
             <h2>My Experience</h2>
             <div class="timeline">
+                <!-- Experience Item 1 -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <h3>Warehouse Assistant</h3>
                         <p><strong>Dundee Deco</strong></p>
-                        <p>Worked on picking, packing, and processing shipment orders. I also installed and maintained warehouse computer systems and inventory infrastructure.</p>
+                        <p>Worked on picking, packing, and processing shipment orders. Also installed and maintained warehouse computer systems and inventory infrastructure.</p>
                     </div>
                     <div class="timeline-date">November 2022 - January 2024</div>
                 </div>
+                <!-- Experience Item 2 -->
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <h3>Data Analyst Intern</h3>
                         <p><strong>Stregis Grp</strong></p>
-                        <p>As a Data Analyst Intern, I verified and added missing UPC and product codes for over 100,000 products, ensuring data accuracy and completeness. I also conducted comprehensive tariff analysis using Canadian and US government databases to guarantee compliance with international trade regulations.</p>
+                        <p>Verified and added missing UPC and product codes for over 100,000 products, ensuring data accuracy and completeness. Conducted comprehensive tariff analysis using Canadian and US government databases to guarantee compliance with international trade regulations.</p>
                     </div>
                     <div class="timeline-date">April 2024 - September 2024</div>
                 </div>
             </div>
         </div>
     </section>
-
 
     <!-- Education Section -->
     <section id="education" class="light-grey-bg">
@@ -125,7 +138,7 @@
                 </div>
                 <div class="education-content">
                     <h3>Bachelor of Science – Computer Science</h3>
-                    <p>Western University, London Ontario</p>
+                    <p><strong>Western University, London, Ontario</strong></p>
                     <p>Expected Graduation: 2027</p>
                     <p>GPA: 3.1/4.0</p>
                     <ul>
@@ -141,6 +154,7 @@
         <div class="contact-container">
             <h2>Contact</h2>
             <div class="contact-grid">
+                <!-- Email -->
                 <div class="contact-item">
                     <a href="mailto:eli.waisbrod@gmail.com" target="_blank">
                         <div class="contact-details">
@@ -152,6 +166,7 @@
                         </div>
                     </a>
                 </div>
+                <!-- GitHub -->
                 <div class="contact-item">
                     <a href="https://github.com/EliWaisbrod" target="_blank">
                         <div class="contact-details">
@@ -163,6 +178,7 @@
                         </div>
                     </a>
                 </div>
+                <!-- LinkedIn -->
                 <div class="contact-item">
                     <a href="https://www.linkedin.com/in/eli-waisbrod" target="_blank">
                         <div class="contact-details">
@@ -174,6 +190,7 @@
                         </div>
                     </a>
                 </div>
+                <!-- Instagram -->
                 <div class="contact-item">
                     <a href="https://www.instagram.com/eliwaisbrod_" target="_blank">
                         <div class="contact-details">
@@ -188,35 +205,33 @@
             </div>
         </div>
     </section>
-    
-    
-    
 
+    <!-- JavaScript -->
     <script>
-        // JavaScript for dynamically highlighting the active section link
+        // Highlight the active section in the navbar based on scroll position
         window.addEventListener("scroll", function () {
             const sections = document.querySelectorAll("section");
             const navLinks = document.querySelectorAll(".nav-link");
 
             let currentSection = "";
-            let closestSectionTop = Number.POSITIVE_INFINITY; // Track the closest section's top to the viewport
+            let closestSectionTop = Number.POSITIVE_INFINITY; // Closest section to the top
 
             sections.forEach((section) => {
-                const sectionTop = section.getBoundingClientRect().top;  // Get section's top relative to the viewport
+                const sectionTop = section.getBoundingClientRect().top;
 
-                // Only consider sections with top position >= 0 (visible in the viewport)
+                // Consider sections visible in the viewport
                 if (sectionTop >= 0 && sectionTop < closestSectionTop) {
                     closestSectionTop = sectionTop;
                     currentSection = section.getAttribute("id");
                 }
             });
 
-            // Check if scrolled to the bottom of the page
+            // If scrolled to the bottom, highlight 'Contact'
             if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 10) {
-                currentSection = "contact"; // Force the contact section to highlight if at the bottom
+                currentSection = "contact";
             }
 
-            // Highlight the current section in the navbar
+            // Update navbar links
             navLinks.forEach((link) => {
                 link.classList.remove("active");
                 if (link.getAttribute("href").includes(currentSection)) {
@@ -224,6 +239,6 @@
                 }
             });
         });
-
     </script>
 </body>
+</html>
